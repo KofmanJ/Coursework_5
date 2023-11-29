@@ -104,7 +104,7 @@ class DBManager:
                             FROM vacancies
                             WHERE lower(vacancy_name) LIKE '%{keyword}%'
                             OR lower(vacancy_name) LIKE '%{keyword}'
-                            OR lower(vacancy_name) LIKE '{keyword}%'""")
+                            OR lower(vacancy_name) LIKE '{keyword}%';""")
 
                 rows = cur.fetchall()
                 data = "\n".join([str(row) for row in rows])
