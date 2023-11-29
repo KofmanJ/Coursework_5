@@ -22,7 +22,7 @@ CREATE TABLE vacancies
 
 SELECT employer_name, COUNT(vacancy_id)
 FROM employers
-JOIN vacancies USING (employer_id) '
+JOIN vacancies USING (employer_id)
 GROUP BY employer_name;
 
 SELECT vacancy_name, employer_name, salary, vacancies.vacancy_url
